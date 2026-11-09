@@ -1,34 +1,49 @@
-# Logs
-logs
+# Dependencies
+node_modules/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+service-account*.json
+
+# Logs and temporary files
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-lerna-debug.log*
+*.tmp
+*.temp
 
-node_modules
-dist
-dist-ssr
-build
-.vite
-coverage
-*.local
+# Build output and test coverage
+dist/
+dist-ssr/
+build/
+coverage/
+.vite/
 
-# Environment files
-.env
-.env.*
+# Documentation
+docs/
 
-# Lock files
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
+# Local caches
+.cache/
+.eslintcache
+.parcel-cache/
+.turbo/
 
-# Editor directories and files
+# Editor and operating-system files
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
+Thumbs.db
 *.suo
 *.ntvs*
 *.njsproj
